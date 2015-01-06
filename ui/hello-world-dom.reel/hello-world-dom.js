@@ -13,5 +13,19 @@ exports.HelloWorldDom = Component.specialize(/** @lends HelloWorldDom# */ {
         value: function HelloWorldDom() {
             this.super();
         }
+    },
+    
+    draw: {
+        value: function () {
+            var fragment = document.createDocumentFragment();
+            var div = document.createElement("div");
+            div.textContent = "hello";
+            fragment.appendChild(div);
+            fragment.appendChild(div.cloneNode(true));
+            fragment.appendChild(div.cloneNode(true));
+            fragment.firstChild.classList.add('HelloWorldDom-left');
+            fragment.firstChild.classList.add('HelloWorldDom-right');
+            this.element.appendChild(fragment);
+        }
     }
 });
