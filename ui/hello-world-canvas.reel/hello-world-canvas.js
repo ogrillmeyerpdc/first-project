@@ -23,12 +23,12 @@ exports.HelloWorldCanvas = Component.specialize(/** @lends HelloWorldCanvas# */ 
             
             var gradient=ctx.createLinearGradient(0,0,canvas.width,0);
             gradient.addColorStop("0","red");
-            gradient.addColorStop("0.5","blue");
+            gradient.addColorStop("0.5","green");
             gradient.addColorStop("1.0","purple");
             // Fill with gradient
             ctx.fillStyle=gradient;
             
-            ctx.fillText("hello", 20, 20);
+            ctx.fillText("This is a whole bunch of text, well not really that much", 20, 20);
         }
     }
 });
