@@ -12,13 +12,38 @@
             "properties": {
                 "element": {"#": "main"}
             }
+        },
+        "decrement": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "decrement"},
+                "enabled": true,
+                "label": "-"
+            }
+        },
+        "increment": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "increment"},
+                "enabled": true,
+                "label": "+"
+            }
+        },
+        "value": {
+            "prototype": "digit/ui/text.reel",
+            "properties": {
+                "element": {"#": "value"},
+                "value": "0"
+            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
-
+        <button data-montage-id="increment"></button>
+        <p data-montage-id="value"></p>
+        <button data-montage-id="decrement"></button>
     </div>
 </body>
 </html>
