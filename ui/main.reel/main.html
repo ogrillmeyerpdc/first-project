@@ -43,6 +43,14 @@
                 }
             ]
         },
+        "textField": {
+            "prototype": "digit/ui/text-field.reel",
+            "properties": {
+                "element": {"#": "textField"},
+                "placeholderValue": "Text",
+                "value": "0"
+            }
+        },
         "value": {
             "prototype": "digit/ui/text.reel",
             "properties": {
@@ -53,7 +61,6 @@
         "value2": {
             "prototype": "digit/ui/text.reel",
             "properties": {
-                "element": {"#": "value2"},
                 "value": "2"
             }
         }
@@ -64,8 +71,8 @@
     <div data-montage-id="main" data-montage-skin="light" class="Main">
         <button data-montage-id="inc"></button>
         <p data-montage-id="value"></p>
-        <p data-montage-id="value2"></p>
         <button data-montage-id="dec"></button>
+        <input data-montage-id="textField" type="text">
     </div>
 </body>
 </html>
