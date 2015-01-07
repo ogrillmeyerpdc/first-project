@@ -22,9 +22,9 @@ exports.HelloWorldCanvas = Component.specialize(/** @lends HelloWorldCanvas# */ 
             ctx.font="20px Georgia";
             
             var gradient=ctx.createLinearGradient(0,0,canvas.width,0);
-            gradient.addColorStop("0","magenta");
+            gradient.addColorStop("0","red");
             gradient.addColorStop("0.5","blue");
-            gradient.addColorStop("1.0","red");
+            gradient.addColorStop("1.0","purple");
             // Fill with gradient
             ctx.fillStyle=gradient;
             
