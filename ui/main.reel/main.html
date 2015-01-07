@@ -13,21 +13,35 @@
                 "element": {"#": "main"}
             }
         },
-        "decrement": {
+        "dec": {
             "prototype": "digit/ui/button.reel",
             "properties": {
-                "element": {"#": "decrement"},
+                "element": {"#": "dec"},
                 "enabled": true,
                 "label": "-"
-            }
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "useCapture": false,
+                    "listener": {"@": "owner"}
+                }
+            ]
         },
-        "increment": {
+        "inc": {
             "prototype": "digit/ui/button.reel",
             "properties": {
-                "element": {"#": "increment"},
+                "element": {"#": "inc"},
                 "enabled": true,
                 "label": "+"
-            }
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "useCapture": false,
+                    "listener": {"@": "owner"}
+                }
+            ]
         },
         "value": {
             "prototype": "digit/ui/text.reel",
@@ -41,9 +55,9 @@
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
-        <button data-montage-id="increment"></button>
+        <button data-montage-id="inc"></button>
         <p data-montage-id="value"></p>
-        <button data-montage-id="decrement"></button>
+        <button data-montage-id="dec"></button>
     </div>
 </body>
 </html>
